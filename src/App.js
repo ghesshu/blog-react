@@ -1,41 +1,25 @@
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import './App.css';
 
-import Root from './routes/Root';
+import Dashboard from './routes/Dashboard';
 import ErrorPage from './routes/ErrorPage';
-import About from './routes/About';
-import Posts from './routes/Posts';
-import Contact from './routes/Contact';
-import PostPage from './routes/PostPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Dashboard />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/posts",
-    element: <Posts />,
-  },
-  {
-    path: "/contact",
-    element : <Contact />
-  },
-  {
-    path: "/posts/1",
-    element : <PostPage />
-  },
+  // {
+  //   path: "/about",
+  //   element: <About />,
+  // },
 ]);
 
 function App() {
   return (
-    <div>
+    <div className=''>
          <RouterProvider router={router} />
     </div>
   );

@@ -1,7 +1,6 @@
 import React from 'react'
 import { useRouteError } from 'react-router-dom'
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 
 
 const ErrorPage = () => {
@@ -11,9 +10,7 @@ const ErrorPage = () => {
   return (
   <div className="">
 
-      <div className="w-screen z-10 relative">
-      <Navbar />
-      </div>
+
 
        <div className="h-screen flex flex-col justify-between">
        <div className="mt-44">
@@ -27,9 +24,7 @@ const ErrorPage = () => {
 </div>
 </div>
 
-<div className="border-t-2 container mx-auto mt-14">
-<Footer />
-</div>
+
        </div>
   </div>
   )
